@@ -1,0 +1,49 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.box-wraper{
+  max-width: 1200px;
+}
+
+.box-wraper::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.box-item {
+  display: block;
+  width: 240px;
+  float: left;
+  text-align: center;
+  padding: 40px 0;
+  cursor: pointer;
+}
+
+.image-box {
+  margin: 0 auto;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  background-color: gray;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-box img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+
+.text-box {
+  width: 120px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
